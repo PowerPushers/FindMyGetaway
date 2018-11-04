@@ -1,0 +1,13 @@
+.foot {
+    display: flex;
+    bottom:0;
+    padding: 20px;
+    left: 0;
+    right: 0;
+     font-size:1em;
+     background-color: #275499;
+     color:white;
+  }
+.nav-link{
+  color: white;
+}
