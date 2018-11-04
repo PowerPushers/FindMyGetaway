@@ -22,7 +22,7 @@ class App extends Component {
   };
 
   renderLandingPage = () => {
-    return <LandingPage  />
+    return <LandingPage />
   }
 
   onError = err => {
@@ -49,9 +49,8 @@ class App extends Component {
           <Route path="/search" component={this.renderVacationCards} />
           <Route path="/contact" component={ContactForm} />
         </header>
-         <Footer />
+        <Footer />
       </div>
-      
     )
   }
 }
