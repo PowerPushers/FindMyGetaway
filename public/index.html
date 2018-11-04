@@ -1,17 +1,59 @@
 <!doctype html>
 <html lang="en" data-framework="react">
+	<style>
+	  #box-container {
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    display: flex;
+    color: white;
+    background-color: #275499;
+    grid-area: header;
+    position: fixed;
+  }
+ @media only screen and (max-width: 600px) {
+    body {
+        background-color: lightblue;
+    }
+}
+  .foot {
+    display: flex;
+    bottom:0;
+    padding: 20px;
+    left: 0;
+    right: 0;
+    position: fixed;
+     font-size:1em;
+     background-color: #275499;
+     color:white;
+  }
+.nav-link{
+  color: white;
+}
+
+
+	</style>
 	<head>
 		<meta charset="utf-8">
-		<title>React • TodoMVC</title>
-		<link rel="stylesheet" href="node_modules/todomvc-common/base.css">
-		<link rel="stylesheet" href="node_modules/todomvc-app-css/index.css">
+		<title><h1>Find My Getaway</h1></title>
 	</head>
 	<body>
-		<section class="todoapp"></section>
-		<footer class="info">
-			<p>Double-click to edit a todo</p>
-			<p>Created by <a href="http://github.com/petehunt/">petehunt</a></p>
-			<p>Part of <a href="http://todomvc.com">TodoMVC</a></p>
-		</footer>
+			<header id="header" class="box-container">
+					<div id="box-container">
+					  <div><p><h1> Find my Getaway <h1></p></div>
+					<nav id="nav-bar" class="box-1">
+					  <ul>
+						<li><a class="nav-link" href="#lollipops">Lollipops</a></li>
+						<li><a class="nav-link" href="#chocolates">Chocolates</a></li>
+						<li><a class="nav-link" href="#gummy-bears">Gummy Bears</a></li>
+					  </ul>
+					</nav>
+					</div>
+					</header>
+				  
+						  <footer class="foot">
+							  Terms and Conditions apply. Please read the fine print before paying. | Created by &nbsp;<a class="nav-link" href="https://github.com/PowerPushers">  Power Pushers</a> &nbsp;| Copyright belongs to &nbsp;<a class="nav-link" href="http://github.com"> GitHub, Inc.</a> &nbsp;2018
+						  </footer>
 	</body>
 </html>
