@@ -4,11 +4,8 @@ import { Route } from "react-router-dom";
 import Login from "./Login";
 import VacationCard from "./VacationCard";
 import ContactForm from "./contactform";
-<<<<<<< HEAD
 import LandingPage from './landing'
-=======
 import Header from "./Header";
->>>>>>> header and footer
 import data from "./data/vacations.json";
 import Footer from "./Footer";
 
@@ -25,7 +22,7 @@ class App extends Component {
   };
 
   renderLandingPage = () => {
-    return <LandingPage />
+    return <LandingPage  />
   }
 
   onError = err => {
@@ -52,7 +49,6 @@ class App extends Component {
           <Route path="/search" component={this.renderVacationCards} />
           <Route path="/contact" component={ContactForm} />
         </header>
-          <ContactForm />
          <Footer />
       </div>
       
