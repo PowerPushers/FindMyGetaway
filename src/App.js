@@ -5,7 +5,9 @@ import Login from "./Login";
 import VacationCard from "./VacationCard";
 import ContactForm from "./contactform";
 import LandingPage from './landing'
+import Header from "./Header";
 import data from "./data/vacations.json";
+import Footer from "./Footer";
 
 class App extends Component {
   constructor(props) {
@@ -36,6 +38,7 @@ class App extends Component {
   render() {
     return (
       <div>
+        <Header />
         <header className="header">
           <Login
             model={this.props.model}
@@ -46,8 +49,10 @@ class App extends Component {
           <Route path="/search" component={this.renderVacationCards} />
           <Route path="/contact" component={ContactForm} />
         </header>
+         <Footer />
       </div>
-    );
+      
+    )
   }
 }
 
